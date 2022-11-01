@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 st.sidebar.title('Smart Farm Surveillance System')
 
