@@ -22,25 +22,16 @@ elif base_genre == 'Livestock Detection and Tracking':
 			            The output classification video display either all the cattle types or the cattle type given by the user.
                     ''')
 		genre = st.sidebar.radio('Choose the livestock classification type',('Species Classification','Behavior Classification'))
-
-	with st.container():
-		st.markdown("<h1 style='text-align: center; color: black;'>Livestock Monitoring</h1>", unsafe_allow_html=True)
-		st.markdown(''' Here the type of cattle is identified using the drone video of cattle grazing on the farmland. Cattles like cow, sheep and horse are identified.
-			            The basic positional behavior of cattles like standing, eating and idle states are  captured.
-			            Along with the mentioned classification, the cattles are counted and their movement is also tracked.
-			            The output classification video display either all the cattle types or the cattle type given by the user.
-                    ''')
-		genre = st.sidebar.radio('Choose the livestock classification type',('Species Classification','Behavior Classification'))
-
+		
 		if genre == 'Species Classification':
 			st.markdown("<h3 style='text-align: center; color: black;'>Species Classification</h3>", unsafe_allow_html=True)
 			names = ['All','cow','sheep','horse']
 			assigned_class = st.sidebar.radio("Choose the cattle to be identified:", names)
 			st.sidebar.markdown('---')
-			uploaded_files = st.sidebar.file_uploader("Upload the drone video of farm", type=[ "mp4", "mov",'avi','asf', 'm4v' ], accept_multiple_files=False)
+			#uploaded_files = st.sidebar.file_uploader("Upload the drone video of farm", type=[ "mp4", "mov",'avi','asf', 'm4v' ], accept_multiple_files=False)
 		else:
 			st.markdown("<h3 style='text-align: center; color: black;'>Behavior Classification</h3>", unsafe_allow_html=True)
 			names = ['All','Stand','Eat','Idle']
 			assigned_class = st.sidebar.radio("Choose the behavior type to be identified:", names)
 			st.sidebar.markdown('---')
-			uploaded_files = st.sidebar.file_uploader("Upload the drone video of farm", type=[ "mp4", "mov",'avi','asf', 'm4v' ], accept_multiple_files=False)
+			#uploaded_files = st.sidebar.file_uploader("Upload the drone video of farm", type=[ "mp4", "mov",'avi','asf', 'm4v' ], accept_multiple_files=False)
