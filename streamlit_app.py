@@ -22,7 +22,7 @@ elif base_genre == 'Livestock Detection and Tracking':
 			            Along with the mentioned classification, the cattles are counted and their movement is also tracked.
 			            The output classification video display either all the cattle types or the cattle type given by the user.
                     ''')
-		genre = st.sidebar.radio('Choose the livestock classification type',('Species Classification','Behavior Classification'))
+		genre = st.sidebar.radio('Choose the livestock classification type:',('Species Classification','Behavior Classification'))
 		
 		if genre == 'Species Classification':
 			st.markdown("<h3 style='text-align: center; color: black;'>Species Classification</h3>", unsafe_allow_html=True)
