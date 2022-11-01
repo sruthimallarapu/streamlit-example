@@ -6,7 +6,7 @@ st.sidebar.subheader('Settings')
 base_genre = st.sidebar.selectbox("Choose your preference",('About Smart Farm Surveillance','Livestock Monitoring','Object Detection in Farm'))
 
 if base_genre == 'About Smart Farm Surveillance':
-  	with st.container():
+	with st.container():
 		st.markdown("# Smart Farm Surveillance")
 		#image = Image.open('Search-for-Lost-Cattle.jpeg')
 		#st.image(image)
