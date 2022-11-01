@@ -7,7 +7,7 @@ base_genre = st.sidebar.selectbox("Choose your preference",('About Smart Farm Su
 
 if base_genre == 'About Smart Farm Surveillance':
   	with st.container():
-		st.markdown("Smart Farm Surveillance")
+		st.markdown("# Smart Farm Surveillance")
 		#image = Image.open('Search-for-Lost-Cattle.jpeg')
 		#st.image(image)
 		st.markdown('**Smart Farm Surveillance** system is an alternative to the traditional approach of farm monitoring by the use of technology-oriented agricultural techniques.\n')
